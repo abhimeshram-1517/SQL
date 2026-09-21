@@ -61,3 +61,9 @@ group by city;
 select city,name , count(rollno) 
 from student 
 group by city,name;
+
+-- Having clause --
+select city , count(rollno)
+from student 
+group by city
+having MAX(marks)>90;
