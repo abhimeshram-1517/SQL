@@ -67,3 +67,12 @@ select city , count(rollno)
 from student 
 group by city
 having MAX(marks)>90;
+
+select city 
+from student 
+where grade = "B"
+group by city
+having MAX(marks)>80
+ORDER BY CITY ASC;
+
+
